@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카운터 웹사이트</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #counter {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>클릭 카운터</h1>
+    <p id="counter">0</p>
+    <button onclick="increaseCounter()">클릭하세요!</button>
+
+    <script>
+        let count = 0;
+
+        function increaseCounter() {
+            count += 1;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body>
+</html>
